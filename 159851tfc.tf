@@ -15,8 +15,7 @@ data "tfe_oauth_client" "vcs_client" {
   name = "Test-IGGithubIssue"
 }
 
-output "org_name"
-{
+output "org_name" {
 value = data.tfe_organization.allocatesoftware.name
 }
 

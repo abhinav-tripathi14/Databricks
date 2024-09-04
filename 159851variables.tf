@@ -1,8 +1,3 @@
-
-variable "TFE_TOKEN" {
-  type = string
-}
-
 variable "tag_geo" {
   type        = string
   description = "The AWS region in which a resource resides. Options: 'global', 'uk', 'ireland', 'australia', 'canada', 'germany', 'france', 'usa', 'denmark', 'sweden'"

@@ -1,7 +1,3 @@
-provider "tfe" {
-  token = var.TFE_TOKEN
-}
-
 locals {
   tfc_org_name = "Test-Abhinav"
 }

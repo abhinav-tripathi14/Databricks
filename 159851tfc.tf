@@ -17,7 +17,7 @@ data "tfe_oauth_client" "vcs_client" {
 
 output "org_name"
 {
-Value = data.tfe_organization.allocatesoftware.name
+value = data.tfe_organization.allocatesoftware.name
 }
 
 output "tfe_oauth_client_vcs_client_oauth_token_id" {

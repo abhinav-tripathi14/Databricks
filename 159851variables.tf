@@ -1,10 +1,3 @@
-variable "client_id" {
-  type = string
-}
-
-variable "client_secret" {
-  type = string
-}
 
 variable "TFE_TOKEN" {
   type = string
@@ -44,14 +37,4 @@ variable "tags_client" {
   type        = string
   description = "Name of the customer using this resource."
   default     = "shared"
-}
-
-variable "databricks_base_account_url" {
-  type        = string
-  description = "The common Databricks Account URL"
-}
-
-variable "databricks_account_id" {
-  type        = string
-  description = "The common Databricks Account ID"
 }

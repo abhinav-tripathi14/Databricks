@@ -21,7 +21,7 @@ output "tfe_oauth_client_vcs_client_oauth_token_id" {
 
 data "tfe_project" "colibri" {
 
-  name         = "Default Project"
+  name         = "New-project-5"
   organization = local.tfc_org_name
 }
 

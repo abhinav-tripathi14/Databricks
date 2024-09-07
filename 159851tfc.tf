@@ -27,9 +27,9 @@ data "tfe_project" "colibri" {
 
 resource "tfe_workspace" "ws_workspace" {
 
-  name         = "rldatix-test1234" # each.value.ws_name
+  name         = "Test-1" # each.value.ws_name
   organization = local.tfc_org_name
-  description  = "rldatix-test" 
+  description  = "Test-1" 
   tag_names = ["databricks-workspace"]
   working_directory = "databricks-workspaces-new"
   auto_apply        = true

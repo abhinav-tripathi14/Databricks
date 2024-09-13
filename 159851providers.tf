@@ -18,7 +18,6 @@ terraform {
     tfe = {
       source  = "hashicorp/tfe"
       version = "~>0.55.0"
-      organization = "Test-Abhinav"
     }
   }
 }

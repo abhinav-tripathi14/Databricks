@@ -27,7 +27,7 @@ data "tfe_project" "colibri" {
 
 resource "tfe_workspace" "ws_workspace" {
 
-  name         = "Test-2" # each.value.ws_name
+  name         = "Test-3" # each.value.ws_name
   organization = local.tfc_org_name
   description  = "Test-2" 
   tag_names = ["databricks-workspace"]

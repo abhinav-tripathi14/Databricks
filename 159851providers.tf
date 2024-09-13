@@ -44,5 +44,5 @@ provider "aws" {
 }
 
 provider "tfe"{
-organization
+
 }

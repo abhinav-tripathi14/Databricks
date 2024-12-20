@@ -79,7 +79,6 @@ resource "tfe_variable" "databricks_base_account_url" {
   description     = "The databricks account base url value"
   variable_set_id = tfe_variable_set.databricks_account_values_var_set.id
 }
-
 resource "tfe_variable" "databricks_client_id" {
 
   key             = "client_id"

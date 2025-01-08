@@ -29,7 +29,7 @@ resource "tfe_workspace" "ws_workspace" {
 
   name         = "Test-3" # each.value.ws_name
   organization = local.tfc_org_name
-  description  = "Test-2" 
+  description  = "Test-3" 
   tag_names = ["databricks-workspace"]
   working_directory = "databricks-workspaces-new"
   auto_apply        = true

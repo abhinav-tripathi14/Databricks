@@ -1,5 +1,5 @@
 locals {
-  tfc_org_name = "Test-Abhinav"
+  tfc_org_name = "Test-ORG22"
 }
 
 data "tfe_organization" "databricks" {
@@ -19,7 +19,7 @@ output "tfe_oauth_client_vcs_client_oauth_token_id" {
   value = data.tfe_oauth_client.vcs_client.oauth_token_id
 }
 
-data "tfe_project" "colibri" {
+data "tfe_project" "projname" {
 
   name         = "Default Project"
   organization = local.tfc_org_name
@@ -35,7 +35,7 @@ resource "tfe_workspace" "ws_workspace" {
   auto_apply        = true
   terraform_version = "~>1.8.0"
 
-  project_id          = data.tfe_project.colibri.id
+  project_id          = data.tfe_project.projname.id
   global_remote_state = false
 
   vcs_repo {

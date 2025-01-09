@@ -39,9 +39,9 @@ resource "tfe_workspace" "ws_workspace" {
   global_remote_state = false
 
   vcs_repo {
-    identifier     = "abhinav-tripathi14/Repo15"
+    identifier     = "abhinav-tripathi14/Databricks"
     branch         = "main"
-    oauth_token_id = data.tfe_oauth_client.vcs_client.oauth_token_id # "ot-bCuQ7KCojFXLSoV8"
+    oauth_token_id = data.tfe_oauth_client.vcs_client.oauth_token_id
   }
   trigger_patterns = ["databricks-workspaces-new/*", "modules/*"]
 

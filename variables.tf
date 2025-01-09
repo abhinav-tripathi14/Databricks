@@ -28,7 +28,6 @@ variable "tags_business_unit" {
   default     = "uki-health"
 }
 
-
 variable "tags_client" {
   type        = string
   description = "Name of the customer using this resource."

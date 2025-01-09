@@ -3,7 +3,7 @@ locals {
     env                = "dev"
     ShortCustomerCode  = "ALLCUST"
     ManagedBy          = "Terraform"
-    TerraformRepo      = "https://github.com/abhinav-tripathi14/Repo15"
+    TerraformRepo      = "https://github.com/abhinav-tripathi14/Databricks"
     TerraformWorkspace = lower("databricks-infrastructure")
     product-family     = var.tags_product_family
     product-group      = var.tags_product_group

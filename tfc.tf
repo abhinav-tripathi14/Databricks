@@ -88,7 +88,6 @@ resource "tfe_variable" "databricks_client_id" {
   variable_set_id = tfe_variable_set.databricks_account_values_var_set.id
 }
 
-
 resource "tfe_variable" "databricks_client_secret" {
 
   key             = "client_secret"

@@ -4,7 +4,7 @@ terraform {
     organization = "Test-Abhinav"
 
     workspaces {
-      name = "databricks-infrastructure"
+      name = "Databricks-workspace"
     }
   }
 

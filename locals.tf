@@ -12,5 +12,4 @@ locals {
     client             = var.tags_client
     department         = var.tags_department
   }
-
 }

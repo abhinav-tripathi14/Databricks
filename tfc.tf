@@ -2,17 +2,17 @@ locals {
   tfc_org_name = "Test-Abhinav"
 }
 
-data "tfe_organization" "allocatesoftware" {
+data "tfe_organization" "databricks" {
   name = local.tfc_org_name
 }
 
 data "tfe_oauth_client" "vcs_client" {
-  organization = data.tfe_organization.allocatesoftware.name
-  name = "Test-IGGithubIssue"
+  organization = data.tfe_organization.databricks.name
+  name = "Databricks-github-vcs-connection"
 }
 
 output "org_name" {
-value = data.tfe_organization.allocatesoftware.name
+value = data.tfe_organization.databricks.name
 }
 
 output "tfe_oauth_client_vcs_client_oauth_token_id" {
@@ -21,15 +21,15 @@ output "tfe_oauth_client_vcs_client_oauth_token_id" {
 
 data "tfe_project" "colibri" {
 
-  name         = "New-project-5"
+  name         = "Default Project"
   organization = local.tfc_org_name
 }
 
 resource "tfe_workspace" "ws_workspace" {
 
-  name         = "Test-3" # each.value.ws_name
+  name         = "New databricks workspace" # each.value.ws_name
   organization = local.tfc_org_name
-  description  = "Test-3" 
+  description  = "New databricks workspace" 
   tag_names = ["databricks-workspace"]
   working_directory = "databricks-workspaces-new"
   auto_apply        = true
@@ -59,7 +59,7 @@ resource "tfe_variable_set" "databricks_account_values_var_set" {
 
   name         = "databricks_account"
   description  = "Databricks Acccount level variables"
-  organization = data.tfe_organization.allocatesoftware.name
+  organization = data.tfe_organization.databricks.name
 }
 
 resource "tfe_variable" "databricks_account_id" {

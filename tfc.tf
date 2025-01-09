@@ -27,7 +27,7 @@ data "tfe_project" "projname" {
 
 resource "tfe_workspace" "ws_workspace" {
 
-  name         = "New databricks workspace" # each.value.ws_name
+  name         = "New-databricks-workspace" # each.value.ws_name
   organization = local.tfc_org_name
   description  = "New databricks workspace" 
   tag_names = ["databricks-workspace"]

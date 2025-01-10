@@ -5,7 +5,7 @@ locals {
 data "tfe_organization" "databricks" {
   name = local.tfc_org_name
 }
-#
+
 data "tfe_oauth_client" "vcs_client" {
   organization = data.tfe_organization.databricks.name
   name = "Databricks-github-vcs-connection"

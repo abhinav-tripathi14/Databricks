@@ -10,7 +10,6 @@ data "tfe_oauth_client" "vcs_client" {
   organization = data.tfe_organization.databricks.name
   name = "Databricks-github-vcs-connection"
 }
-
 output "org_name" {
 value = data.tfe_organization.databricks.name
 }

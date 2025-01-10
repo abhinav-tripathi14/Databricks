@@ -51,7 +51,6 @@ resource "tfe_workspace" "ws_workspace" {
     ]
   }
 }
-
 ###########################################################
 # Variable Set creation for Databricks Values
 ###########################################################

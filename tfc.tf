@@ -1,7 +1,7 @@
 locals {
   tfc_org_name = "Test-ORG22"
 }
-##
+
 data "tfe_organization" "databricks" {
   name = local.tfc_org_name
 }

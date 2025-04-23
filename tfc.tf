@@ -1,5 +1,5 @@
 locals {
-  tfc_org_name = "Test-ORG22"
+  tfc_org_name = "Test-Abhinav"
 }
 
 data "tfe_organization" "databricks" {

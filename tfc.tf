@@ -94,4 +94,4 @@ resource "tfe_variable" "databricks_client_secret" {
   variable_set_id = tfe_variable_set.databricks_account_values_var_set.id
   sensitive       = true
 }
-#no-op
+#no-op1

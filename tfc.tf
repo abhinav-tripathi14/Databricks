@@ -7,7 +7,7 @@ data "tfe_organization" "databricks" {
 #
 data "tfe_oauth_client" "vcs_client" {
   organization = data.tfe_organization.databricks.name
-   name = "Github"
+   name = "Test-IGGithubIssue"
 }
 output "org_name" {
 value = data.tfe_organization.databricks.name

@@ -54,7 +54,7 @@ resource "tfe_workspace" "ws_workspace" {
 ###########################################################
 resource "tfe_variable_set" "databricks_account_values_var_set" {
 
-  name         = "databricks_account_test"
+  name         = "databricks_account"
   description  = "Databricks Acccount level variables"
   organization = data.tfe_organization.databricks.name
 }

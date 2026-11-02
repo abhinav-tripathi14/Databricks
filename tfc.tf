@@ -78,7 +78,7 @@ resource "tfe_variable" "databricks_base_account_url" {
 }
 resource "tfe_variable" "databricks_client_id" {
 
-  key             = "client_id"
+  key             = "client_id_new"
   value           = "testclientid"
   category        = "terraform"
   description     = "The databricks spi client id value"
